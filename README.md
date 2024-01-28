@@ -68,4 +68,10 @@ The results of experiments on the memory transmission strategies in different tr
  ![memory_based_correlation](pic/memory_based_correlation.png)
 
 
+## Train and Test
+* [DA-TransUnet-MAM ](Swin-Unet-MAM)
+
+SwinUnet-MAM
+
+SwinUNETR-MAM & nnFormer-MAM 
 
