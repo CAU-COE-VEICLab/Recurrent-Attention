@@ -7,7 +7,7 @@ I hope this will help you to reproduce the results.
 
 ### 1.Prepare pre-trained ViT models
 following [DA-TransUnet](https://github.com/SUN-1024/DA-TransUnet): R50-ViT-B_16, At the same time, the parameter file (.pth) in the paper is also stored.
-* (You can download and compress it, put it into the model file and rename it TU_Synapse224, and then use the test code (python test.py --dataset Synapse --vit_name R50-ViT-B_16) to get the test results.)
+* (You can download and compress it, put it into the model file and rename it MA_Synapse224, and then use the test code (python test.py --dataset Synapse --vit_name R50-ViT-B_16) to get the test results.)
 
 ### 2.Prepare data
 The preprocessed data is following DA-TransUnet. 
