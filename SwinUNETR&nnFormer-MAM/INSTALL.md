@@ -12,7 +12,7 @@ conda activate MAM
 
 Install [Pytorch](https://pytorch.org/) == 1.12.1, [torchvision](https://pytorch.org/vision/stable/index.html) == 0.13.1, cudatooltookit == 11.6.0 (depends on your NVIDIA driver and you can see your compatible CUDA version at the right hand corner in nvidia-smi)
 ```
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 Install [monai](https://github.com/Project-MONAI/MONAI) == 0.9.0
 ```
@@ -20,7 +20,7 @@ pip install monai==0.9.0
 ```
 Clone this repository and install other required packages:
 ```
-git clone git@github.com:MASILab/3DUX-Net.git
+git clone [this work]
 pip install -r requirements.txt
 ```
 
