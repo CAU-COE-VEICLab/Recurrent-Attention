@@ -5,7 +5,10 @@ Our code is based on Swin-Unet, if you need to use it, please be sure to referen
 I hope this will help you to reproduce the results.
 
 ## 1. Download pre-trained swin transformer model (Swin-T)
-* [Get pre-trained model in this link] (https://drive.google.com/drive/folders/1UC3XOoezeum0uck4KBVGa8osahs6rKUY?usp=sharing): Put pretrained Swin-T into folder "pretrained_ckpt/"
+following 
+* [Swin-Unet](https://github.com/HuCaoFighting/Swin-Unet)
+
+Put pretrained Swin-T into folder "pretrained_ckpt/"
 
 ## 2. Prepare data
 
