@@ -1,4 +1,4 @@
-# Swin-Unet
+# Swin-Unet-MAM
 The codes for the work "Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation"(https://arxiv.org/abs/2105.05537). A validation for U-shaped Swin Transformer. Our paper has been accepted by ECCV 2022 MEDICAL COMPUTER VISION WORKSHOP (https://mcv-workshop.github.io/). We updated the Reproducibility. I hope this will help you to reproduce the results.
 
 ## 1. Download pre-trained swin transformer model (Swin-T)
@@ -41,6 +41,7 @@ Our trained model is stored on the Huawei cloud. The interns do not have the rig
 ## References
 * [TransUnet](https://github.com/Beckschen/TransUNet)
 * [SwinTransformer](https://github.com/microsoft/Swin-Transformer)
+* [Swin-Unet](https://github.com/HuCaoFighting/Swin-Unet)
 
 ## Citation
 
