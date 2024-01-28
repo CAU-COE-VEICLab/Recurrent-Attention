@@ -1,7 +1,7 @@
 # Swin-Unet-MAM
-
-Our code is based on Swin-Unet, if you need to use it, please be sure to reference us and Swin-Unet(https://arxiv.org/abs/2105.05537)!
-The codes for the work "Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation"(https://arxiv.org/abs/2105.05537). A validation for U-shaped Swin Transformer. Our paper has been accepted by ECCV 2022 MEDICAL COMPUTER VISION WORKSHOP (https://mcv-workshop.github.io/). We updated the Reproducibility. I hope this will help you to reproduce the results.
+Swin-Unet-MAM is to replace all Self-Attention in Swin-Unet's encoder with Memory-Attention and apply In-Stage Transmission Strategy (ISTS). Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as shifted windows, relative position encoding, etc.
+Our code is based on Swin-Unet, if you need to use it, please be sure to reference us and Swin-Unet(https://arxiv.org/abs/2105.05537 or https://mcv-workshop.github.io/)!
+I hope this will help you to reproduce the results.
 
 ## 1. Download pre-trained swin transformer model (Swin-T)
 * [Get pre-trained model in this link] (https://drive.google.com/drive/folders/1UC3XOoezeum0uck4KBVGa8osahs6rKUY?usp=sharing): Put pretrained Swin-T into folder "pretrained_ckpt/"
