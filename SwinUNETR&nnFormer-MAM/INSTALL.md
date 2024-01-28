@@ -1,13 +1,13 @@
 # Installation Tutorial
 
-We provide step-by-step installation instructions to create the corresponding environment for using 3D UX-Net and demonstrates the corresponding folder structure to input data samples.
+We provide step-by-step installation instructions to create the corresponding environment for using SwinUNETR-MAM and nnFormer-MAM and demonstrate the corresponding folder structure to input data samples.
 
 
 ## Conda Environment Setup
 Create your own conda environment 
 ```
-conda create -n uxnet3d python=3.8
-conda activate uxnet3d
+conda create -n MAM python=3.8
+conda activate MAM
 ```
 
 Install [Pytorch](https://pytorch.org/) == 1.12.1, [torchvision](https://pytorch.org/vision/stable/index.html) == 0.13.1, cudatooltookit == 11.6.0 (depends on your NVIDIA driver and you can see your compatible CUDA version at the right hand corner in nvidia-smi)
