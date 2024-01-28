@@ -1,2 +1,2 @@
 # Memory-Attention
-This project is a paper called Memory-Attention published in Information Fusion in 2024
+This is the code base for **`"Enhancing your attention to memorize more information for multimodal medical image segmentation"`**, and the article is published in **`Information Fusion`**.
