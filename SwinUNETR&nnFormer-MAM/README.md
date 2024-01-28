@@ -5,18 +5,6 @@
 Our code is based on 3D UX-Net, if you need to use it, please be sure to reference us and 3D UX-Net(https://arxiv.org/abs/2209.15076)!
 I hope this will help you to reproduce the results.
 
----
-
-<p align="center">
-<img src="screenshots/Figure_1.png" width=100% height=40% 
-class="center">
-</p>
-
-<p align="center">
-<img src="screenshots/Figure_2.png" width=100% height=40% 
-class="center">
-</p>
-
 We propose **3D UX-Net**, a pure volumetric convolutional network to adapt hierarchical transformers behaviour (e.g. Swin Transformer) for Medical Image Segmentation with less model parameters.
 
  ## Installation
