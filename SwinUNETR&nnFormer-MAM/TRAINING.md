@@ -4,6 +4,8 @@ We provide FeTA2021 training, FLARE2021 training, and AMOS2022 Finetuning comman
 Please check [INSTALL.md](INSTALL.md) for installation instructions first.
 
 ## FeTA 2021 & FLARE 2021 Training
+Note that **'MemorySwinUNETR' denotes 'SwinUNETR-MAM' and 'MemorynnFormer' denotes 'nnFormer-MAM'**.
+
 SwinUNETR-MAM and nnFormer-MAM training on FeTA 2021 with a single GPU:
 ```
 python main_train.py --root root_folder_path --output output_folder_path \
