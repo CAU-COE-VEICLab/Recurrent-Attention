@@ -1,5 +1,9 @@
 # DA-TransUnet-MAM
-**DA-TransUnet-MAM is to replace all Self-Attention in DA-TransUnet's bottleneck with Memory-Attention and apply Stage Transmission Strategy (STS). Note that we only replace Self-Attention and keep the design of Vision-Transformer, such as `position encoding`, etc.**
+**DA-TransUnet-MAM is to replace all the Self-Attention in DA-TransUnet's bottleneck with the Memory-Attention and apply the Stage Transmission Strategy (STS). Note that we only replace Self-Attention and keep the design of Vision-Transformer, such as `position encoding`, etc.**
+
+Our code is based on DA-TransUnet, if you need to use it, please be sure to reference us and DA-TransUnet(https://arxiv.org/abs/2310.12570)!
+
+I hope this will help you to reproduce the results.
 
 ### 1.Prepare pre-trained ViT models
 following [DA-TransUnet](https://github.com/SUN-1024/DA-TransUnet): R50-ViT-B_16, At the same time, the parameter file (.pth) in the paper is also stored.
