@@ -34,3 +34,6 @@ Segmentation results for all models in scenario 1. Throughput was obtained on RT
 | DA-TransUnet | 79.6|	29.1|	87.3|	62.6|	83.1|	79.9|	94.3|	63.3|	86.6|	79.5|
 | DA-TransUnet-MAM | **80.9**|	**25.0**|	87.4|	64.6|	84.6|	82.1|	94.8|	63.2|	89.5|	81.0|
 
+
+![compare1](figures/compare1.png)
+
