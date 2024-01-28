@@ -1,6 +1,6 @@
-### [3D UX-Net: A Large Kernel Volumetric ConvNet Modernizing Hierarchical Transformer for Medical Image Segmentation](https://arxiv.org/abs/2209.15076)
+### nnFormer-MAM & SwinUNETR-MAM
 
-Official Pytorch implementation of 3D UX-Net, from the following paper:
+**nnFormer-MAM and SwinUNETR-MAM are to replace all Self-Attention in Swin-Unet's encoder with Memory-Attention and apply In-Stage Transmission Strategy (ISTS). Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as `shifted windows, relative position encoding`, etc.**
 
 [3D UX-Net: A Large Kernel Volumetric ConvNet Modernizing Hierarchical Transformer for Medical Image Segmentation](https://arxiv.org/abs/2209.15076). ICLR 2023 (Accepted, Poster) \
 Ho Hin Lee, Shunxing Bao, [Yuankai Huo](https://hrlblab.github.io/), [Bennet A. Landman](https://my.vanderbilt.edu/masi/people/bennett-landman-ph-d/) \
