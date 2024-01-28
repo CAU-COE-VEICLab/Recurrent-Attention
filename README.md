@@ -36,5 +36,5 @@ Segmentation results for all models in scenario 1. Throughput was obtained on RT
 
 
 
-![compare1](figures/compare1.png)
+![compare1](pic/compare1.png)
 
