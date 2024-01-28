@@ -69,7 +69,7 @@ The results of experiments on the memory transmission strategies in different tr
 
 
 ## Train and Test
-* [DA-TransUnet-MAM ](Swin-Unet-MAM)
+* [DA-TransUnet-MAM ](DATransUnet-MAM/)
 
 SwinUnet-MAM
 
