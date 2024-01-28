@@ -69,9 +69,9 @@ The results of experiments on the memory transmission strategies in different tr
 
 
 ## Train and Test
+We have provided detailed instructions for model training and testing and experimental details. You can click the link below to view them.
 * [DA-TransUnet-MAM ](DATransUnet-MAM/)
+* [SwinUnet-MAM ](SwinUnet-MAM/)
+* [SwinUNETR-MAM & nnFormer-MAM ](SwinUNETR&nnFormer-MAM/) 
 
-SwinUnet-MAM
-
-SwinUNETR-MAM & nnFormer-MAM 
 
