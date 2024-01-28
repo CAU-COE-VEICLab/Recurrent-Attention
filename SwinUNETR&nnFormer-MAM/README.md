@@ -1,11 +1,10 @@
 ### nnFormer-MAM & SwinUNETR-MAM
 
-**nnFormer-MAM and SwinUNETR-MAM are to replace all Self-Attention in Swin-Unet's encoder with Memory-Attention and apply In-Stage Transmission Strategy (ISTS). Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as `shifted windows, relative position encoding`, etc.**
+**nnFormer-MAM and SwinUNETR-MAM are to replace all the Self-Attention in the above encoder with the Memory-Attention and apply the In-Stage Transmission Strategy (ISTS). Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as `shifted windows, relative position encoding`, etc.**
 
 Our code is based on 3D UX-Net, if you need to use it, please be sure to reference us and 3D UX-Net(https://arxiv.org/abs/2209.15076)!
-I hope this will help you to reproduce the results.
 
-We propose **3D UX-Net**, a pure volumetric convolutional network to adapt hierarchical transformers behaviour (e.g. Swin Transformer) for Medical Image Segmentation with less model parameters.
+I hope this will help you to reproduce the results.
 
  ## Installation
  Please look into the [INSTALL.md](INSTALL.md) for creating conda environment and package installation procedures.
