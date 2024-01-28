@@ -22,6 +22,7 @@ Training and fine-tuning instructions are in [TRAINING.md](TRAINING.md). Pretrai
 <!-- ✅ ⬜️  -->
 ## Evaluation
 Note that **'MemorySwinUNETR' denotes 'SwinUNETR-MAM' and 'MemorynnFormer' denotes 'nnFormer-MAM'**.
+
 Using SwinUNETR-MAM as an example, Efficient evaluation can be performed for the above two public datasets as follows:
 ```
 python test_seg.py --root path_to_image_folder --output path_to_output \
