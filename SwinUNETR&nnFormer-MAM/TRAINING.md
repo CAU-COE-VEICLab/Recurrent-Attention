@@ -43,3 +43,6 @@ We also aim to perform benchmarking in the latest public multi-organ/tissue segm
 
 Feel free to provide recommendations of adding latest volumetric transformer or CNN networks and we can further implement it for benchmarking.
 
+## Reference 
+* [3D UX-Net](https://github.com/MASILab/3DUX-Net)
+
