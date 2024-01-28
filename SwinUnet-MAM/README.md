@@ -1,4 +1,6 @@
 # Swin-Unet-MAM
+
+Our code is based on Swin-Unet, if you need to use it, please be sure to reference us and Swin-Unet(https://arxiv.org/abs/2105.05537)!
 The codes for the work "Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation"(https://arxiv.org/abs/2105.05537). A validation for U-shaped Swin Transformer. Our paper has been accepted by ECCV 2022 MEDICAL COMPUTER VISION WORKSHOP (https://mcv-workshop.github.io/). We updated the Reproducibility. I hope this will help you to reproduce the results.
 
 ## 1. Download pre-trained swin transformer model (Swin-T)
@@ -39,8 +41,6 @@ Many of you have asked me for datasets, and I personally would be very glad to s
 Our trained model is stored on the Huawei cloud. The interns do not have the right to send any files out from the internal system, so I can't share our trained model weights. Regarding how to reproduce the segmentation results presented in the paper, we discovered that different GPU types would generate different results. In our code, we carefully set the random seed, so the results should be consistent when trained multiple times on the same type of GPU. If the training does not give the same segmentation results as in the paper, it is recommended to adjust the learning rate. And, the type of GPU we used in this work is Tesla v100. Finaly, pre-training is very important for pure transformer models. In our experiments, both the encoder and decoder are initialized with pretrained weights rather than initializing the encoder with pretrained weights only.
 
 ## References
-* [TransUnet](https://github.com/Beckschen/TransUNet)
-* [SwinTransformer](https://github.com/microsoft/Swin-Transformer)
 * [Swin-Unet](https://github.com/HuCaoFighting/Swin-Unet)
 
 ## Citation
