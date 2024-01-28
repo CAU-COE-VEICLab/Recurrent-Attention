@@ -26,7 +26,7 @@ The main research contents of this paper are as follows:
 ### Comparison experiments
 The results of the quantitative comparison between the SAM-based model and the MAM-based model are in the Synapse dataset. `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
 
-Segmentation results for all models in scenario 1. Throughput was obtained on RTX 4090 GPU.
+The results of the Synapse dataset.
 | Methods  | DSC(%)↑ | HD(mm)↓ | Aorta(%) | Gallbladder(G)(%) |  Kidney(L)(%) | Kidney(R)(%) | Liver(%) | Pancreas(%) | Spleen(%) | Stomach(%) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: | :---: | :---: | :---: |
 | Swin-Unet | 77.6	|25.2|	86.2|	66.4	|82.3	|75.4	|93.9	|56.4	|88.4	|71.7|
@@ -37,4 +37,35 @@ Segmentation results for all models in scenario 1. Throughput was obtained on RT
 
 
 ![compare1](pic/compare1.png)
+
+The results of the FLARE 2021(3D) dataset.
+| Methods  | #param(M) | FLOPs(G) | DSC(%)↑ | Spleen(%) |  Kidney(%) | Liver(%) | Pancreas(%) | 
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
+| nnFormer | 149.3	|240.2	|88.7	|97.3	|94.9	|94.9	|67.6|
+| nnFormer-MAM | 149.3|	240.2|	89.9|	97.2|	95.5|	96.8|	70.1|
+| SwinUNETR | 62.2	|328.4	|92.7	|97.7	|95.9	|96.9	|80.3|
+| SwinUNETR-MAM |62.2	|328.4	|93.3	|97.8	|96.5	|97.3	|81.6|
+
+
+![compare3D_FLARTE](pic/compare3D_FLARTE.png)
+
+### Ablation experiments
+
+**To learn more detail please read our paper**.
+
+ We conducted a detailed ablation investigation on each important memory concept MAM gave to verify its scientific validity properly. At the same time, we demonstrate that **the memory mechanism in MAM is essentially different from the residual connectivity mechanism in terms of the sensitivity of the data distribution**. `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
+
+The results of experiments on the memory transmission strategies in different transformer structures.
+  | Memory Transmission Strategies  | Label | Encoder | Decoder | #param(M) |  FLOPs(G) | DSC(%)↑ | HD(mm)↓ | 
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
+| No MAM | Baseline 5	|-	|-	|41.3	|8.7	|77.60	|25.19|
+| STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.94|
+| STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.96|
+| ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.25|
+| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|27.04|
+
+
+ ![memory_based_correlation](pic/memory_based_correlation.png)
+
+
 
