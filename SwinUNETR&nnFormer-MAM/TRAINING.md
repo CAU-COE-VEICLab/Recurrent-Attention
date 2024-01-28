@@ -1,6 +1,6 @@
 # Training
 
-We provide FeTA2021 training, FLARE2021 training, and AMOS2022 Finetuning commands here.
+We provide FeTA2021 training, FLARE2021 training commands here.
 Please check [INSTALL.md](INSTALL.md) for installation instructions first.
 
 ## FeTA 2021 & FLARE 2021 Training
