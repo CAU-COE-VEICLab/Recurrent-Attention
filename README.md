@@ -1,5 +1,5 @@
 # Memory-Attention
-This is the code base for **`"Enhancing your attention to memorize more information for multimodal medical image segmentation"`**, and the article is submitted to **`Information Fusion`**.
+This is the code base for **`"Cognitive Psychology-Inspired Memory-Attention: Enhancing your attention to memorize more information for multimodal medical image segmentation"`**, and the article is submitted to **`Information Fusion`**.
 
 ## Abstract
 In this work, we first summarize the particular challenges of the medical image segmentation task. Secondly, summarize how deep neural network models can cope with that challenge. Finally, we give an effective solution.
