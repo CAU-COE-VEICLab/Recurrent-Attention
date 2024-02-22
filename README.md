@@ -59,10 +59,10 @@ The results of experiments on the memory transmission strategies in different tr
   | Memory Transmission Strategies  | Label | Encoder | Decoder | #param(M) |  FLOPs(G) | DSC(%)↑ | HD(mm)↓ | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
 | No MAM | Baseline 5	|-	|-	|41.3	|8.7	|77.60	|25.19|
-| STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.94|
-| STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.96|
+| STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.81|
+| STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.83|
 | ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
-| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|27.04|
+| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|26.91|
 
 
  ![memory_based_correlation](pic/memory_based_correlation.png)
