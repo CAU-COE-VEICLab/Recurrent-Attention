@@ -62,7 +62,7 @@ The results of experiments on the memory transmission strategies in different tr
 | STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.81|
 | STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.83|
 | ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
-| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|26.91|
+| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|25.06|
 
 
  ![memory_based_correlation](pic/memory_based_correlation.png)
