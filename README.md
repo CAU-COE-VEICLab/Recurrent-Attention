@@ -30,7 +30,7 @@ The results of the Synapse dataset.
 | Methods  | DSC(%)↑ | HD(mm)↓ | Aorta(%) | Gallbladder(G)(%) |  Kidney(L)(%) | Kidney(R)(%) | Liver(%) | Pancreas(%) | Spleen(%) | Stomach(%) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: | :---: | :---: | :---: |
 | Swin-Unet | 77.6	|25.2|	86.2|	66.4	|82.3	|75.4	|93.9	|56.4	|88.4	|71.7|
-| Swin-Unet-MAM | 78.6|	23.3	|85.6	|63.6	|84.5	|79.7	|94.0	|58.6	|89.7	|73.4|
+| Swin-Unet-MAM | 78.6|	23.1	|85.6	|63.6	|84.5	|79.7	|94.0	|58.6	|89.7	|73.4|
 | DA-TransUnet | 79.6|	29.1|	87.3|	62.6|	83.1|	79.9|	94.3|	63.3|	86.6|	79.5|
 | DA-TransUnet-MAM | **80.9**|	**25.0**|	87.4|	64.6|	84.6|	82.1|	94.8|	63.2|	89.5|	81.0|
 
@@ -61,7 +61,7 @@ The results of experiments on the memory transmission strategies in different tr
 | No MAM | Baseline 5	|-	|-	|41.3	|8.7	|77.60	|25.19|
 | STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.94|
 | STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.96|
-| ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.25|
+| ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
 | ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|27.04|
 
 
