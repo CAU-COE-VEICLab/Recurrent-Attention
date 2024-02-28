@@ -1,6 +1,8 @@
 # Memory-Attention
 This is the code base for **`"Cognitive Psychology-Inspired Memory-Attention: Enhancing your attention to memorize more information for multimodal medical image segmentation"`**, and the article is submitted to **`Information Fusion`**.
 
+We first proposed using MCWMM as a guideline for model design, and we introduced the concept of working memory into medical image segmentation, which pioneered the use of cognitive-behavioral theory in cognitive psychology to guide model design. Compared to the success of MAM in terms of performance, it is more important that our study provides an inspiring modeling idea for a wide range of researchers and new perspectives for solving the difficulties of medical image segmentation.
+
 ## Abstract
 In this work, we first summarize the particular challenges of the medical image segmentation task. Secondly, summarize how deep neural network models can cope with that challenge. Finally, we give an effective solution.
 The main research contents of this paper are as follows:
