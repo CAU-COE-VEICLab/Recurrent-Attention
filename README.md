@@ -1,27 +1,24 @@
 # Memory-Attention
-This is the code base for **`"Cognitive Psychology-Inspired Memory-Attention: enhancing your attention to memorize more information for multimodal medical image segmentation"`**, and the article is submitted to **`Information Fusion`**.
+This is the code base for **`"Making your visual deep neural networks remember more information"`**, and the article is submitted to **`Nature Communications`**.
 
-We first proposed using MCWMM as a guideline for model design, and we introduced the concept of working memory into medical image segmentation, which pioneered the use of cognitive-behavioral theory in cognitive psychology to guide model design. Compared to the success of MAM in terms of performance, it is more important that our study provides an inspiring modeling idea for a wide range of researchers and new perspectives for solving the difficulties of medical image segmentation.
+In this work, we explore integrating abstract cognitive theories into the modeling process of visual DNNs from a computational perspective. Inspired by MCWMM, we introduce a pioneering Memory-Attention Mechanism (MAM), which models for the first time the bootstrapping effect of working memory representations on visual attention in visual DNNs, empowering visual DNNs to model time-scale representations. Notably, the high topological design of MAM allows it to seamlessly replace the SAM in any expert model, inheriting the pre-trained weights of the SAM. This feature greatly simplifies the integration and optimization of the model, enhancing its practicality and efficiency. 
 
 ## Abstract
-In this work, we first summarize the particular challenges of the medical image segmentation task. Secondly, summarize how deep neural network models can cope with that challenge. Finally, we give an effective solution.
-The main research contents of this paper are as follows:
+MAM's strengths are attributed to four points: 
 
-(i) `Inspired by WCWMM`, we propose a `human-like memory and action method` called **`Memory-Attention Mechanism (MAM)`** for the first time, using **`abstract cognitive-behavioral theories`** as the guiding idea for model design and introducing the concept of **`working memory`** into deep learning for the first time. **`see Fig1`**. 
+(i) **` MAM successfully models abstract long-term memory and working memory into representations that allow for computation`**. 
+
+(ii) **` Inspired by WCWMM, MAM constructs a memory architecture that maintains information within the model's pipeline over time, thereby innovatively incorporating the ability to model time-scale representations within visual DNNs`**.
+
+(iii) **` MAM bases its modeling on visual cognitive processes and successfully implements top-down guided attention from memory in visual DNNs.`**.
+
+(iv) **` MAM exhibits an excellent topology, enabling seamless replacement of SAM in any expert model, utilizing its pre-training weights`**.`see Fig1 to Fig3`.
 
 ![MAM model](pic/model.png)
-
-(ii) MAM mimics the `human visual cognitive system at the functional level` and realizes **`the efficient coupling of the ability to extract local detailed features and establish global information dependencies in computational theory`**, thus improving the performance of multimodal medical image segmentation models. Furthermore, `incorporating memory allows` **`MAM to creatively express long-distance dependencies at the pixel level between distinct layers throughout time (see Fig2)`**.
-
 ![dependency](pic/MTS.png)
-
-(iii) `Attention in MAM is obtained through` **`the comprehensive integration and analysis of the memory of all previous network layers with the information of the current layer`**. Thus, MAM can compensate for the precise information that may be overlooked `when building long-distance dependencies through memory recall and retrieval`. Furthermore, MAM is **`exceedingly topological`**, allowing for the seamless replacement of the Self-Attention Mechanism (SAM) in SAM-based models and **`using SAM's pre-training weights`**, effectively mitigating the issues caused by **`computational resources and model migration`**.
-
-(iv) To adapt the Sequential Architecture and the Hierarchical Architecture Transformers, we propose the **`Sequential Transmission Strategy (STS)`**, which emphasizes memory sharing and integration, and the **`In-Stage Transmission Strategy (ISTS)`**, which emphasizes specialized processing of memories of different dimensions, respectively. It is worth noting that `ISTS` uses **`a divide-and-conquer strategy`** `that is more in line with the information-processing mechanism of the human brain.` **`see Fig3`**.
-
 ![STSandISTS](pic/dependency.png)
 
-(v) To validate the state-of-the-art of MAM, we built hybrid and pure Transformer architecture models based on MAM, and we ran controlled tests on **`2D and 3D medical image datasets`** from various modalities. Finally, we conducted a detailed ablation investigation on each important memory concept MAM gave to verify its **`scientific validity`** properly. see Tables 1 to 5.
+This study does not prove that the abstraction approach to MCWMM in MAM is optimal. However, through scientific design and comprehensive ablation experiments, we hope to demonstrate that abstract cognitive theories can serve as a guideline for model design, accelerating the interaction and integration of cognitive psychology and AI and inspiring the exploration of the intersection between other abstract disciplines with AI. Furthermore, our experimental findings indicate that a model's design significantly contributes to its performance when aligned with human cognitive mechanisms. This design philosophy prompts the model to exhibit alignment with human cognition in specific capabilities.
 
 ## Results
 **To learn more detail please read our paper**.
