@@ -25,7 +25,7 @@ This study does not prove that the abstraction approach to MCWMM in MAM is optim
 ### Comparison experiments
 The results of the quantitative comparison between the SAM-based model and the MAM-based model are in the Task 1 (Synapse dataset). `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
 
-The results of the Synapse dataset.
+The results of the Task 1.
 | Methods  | DSC(%)↑ | HD(mm)↓ | Aorta(%) | Gallbladder(G)(%) |  Kidney(L)(%) | Kidney(R)(%) | Liver(%) | Pancreas(%) | Spleen(%) | Stomach(%) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: | :---: | :---: | :---: |
 | Swin-Unet | 77.6	|25.2|	86.2|	66.4	|82.3	|75.4	|93.9	|56.4	|88.4	|71.7|
