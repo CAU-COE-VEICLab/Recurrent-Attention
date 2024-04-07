@@ -26,7 +26,7 @@ The main research contents of this paper are as follows:
 ## Results
 **To learn more detail please read our paper**.
 ### Comparison experiments
-The results of the quantitative comparison between the SAM-based model and the MAM-based model are in the Synapse dataset. `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
+The results of the quantitative comparison between the SAM-based model and the MAM-based model are in the Task 1 (Synapse dataset). `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
 
 The results of the Synapse dataset.
 | Methods  | DSC(%)↑ | HD(mm)↓ | Aorta(%) | Gallbladder(G)(%) |  Kidney(L)(%) | Kidney(R)(%) | Liver(%) | Pancreas(%) | Spleen(%) | Stomach(%) |
@@ -40,7 +40,7 @@ The results of the Synapse dataset.
 
 ![compare1](pic/compare1.png)
 
-The results of the FLARE 2021(3D) dataset.
+The results of the Task 5 - 3D (FLARE 2021-3D) dataset.
 | Methods  | #param(M) | FLOPs(G) | DSC(%)↑ | Spleen(%) |  Kidney(%) | Liver(%) | Pancreas(%) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
 | nnFormer | 149.3	|240.2	|88.7	|97.3	|94.9	|94.9	|67.6|
@@ -64,7 +64,7 @@ The results of experiments on the memory transmission strategies in different tr
 | STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.81|
 | STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.83|
 | ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
-| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|25.06|
+| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|23.54|
 
 
  ![memory_based_correlation](pic/memory_based_correlation.png)
