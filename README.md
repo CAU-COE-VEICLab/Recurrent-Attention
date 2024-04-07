@@ -1,7 +1,7 @@
 # Memory-Attention
 This is the code base for **`"Making your visual deep neural networks remember more information"`**, and the article is submitted to **`Nature Communications`**.
 
-In this work, we explore integrating abstract cognitive theories into the modeling process of visual DNNs from a computational perspective. Inspired by MCWMM, we introduce a pioneering Memory-Attention Mechanism (MAM), which models for the first time the bootstrapping effect of working memory representations on visual attention in visual DNNs, empowering visual DNNs to model time-scale representations. Notably, the high topological design of MAM allows it to seamlessly replace the SAM in any expert model, inheriting the pre-trained weights of the SAM. This feature greatly simplifies the integration and optimization of the model, enhancing its practicality and efficiency. 
+In this work, we explore integrating abstract **cognitive theories** into the **modeling process of visual DNNs** from a computational perspective. Inspired by **MCWMM**, we introduce a pioneering **Memory-Attention Mechanism (MAM)**, which models for the first time **the bootstrapping effect of working memory representations on visual attention** in visual DNNs, empowering visual DNNs to **model time-scale representations**. Notably, the high **topological design** of MAM allows it to `seamlessly replace the SAM in any expert model, inheriting the pre-trained weights of the SAM`. This feature greatly simplifies the **integration and optimization of the model**, enhancing its **practicality and efficiency**. 
 
 ## Abstract
 MAM's strengths are attributed to four points: 
@@ -54,12 +54,12 @@ The results of the Task 5 - 3D (FLARE 2021-3D) dataset.
 
  We conducted a detailed ablation investigation on each important memory concept MAM gave to verify its scientific validity properly. At the same time, we demonstrate that **the memory mechanism in MAM is essentially different from the residual connectivity mechanism in terms of the sensitivity of the data distribution**. `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
 
-The results of experiments on the memory transmission strategies in different transformer structures.
+The results in the ablation experiment 5.
   | Memory Transmission Strategies  | Label | Encoder | Decoder | #param(M) |  FLOPs(G) | DSC(%)↑ | HD(mm)↓ | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
 | No MAM | Baseline 5	|-	|-	|41.3	|8.7	|77.60	|25.19|
-| STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.81|
-| STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.83|
+| STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.94|
+| STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.96|
 | ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
 | ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|23.54|
 
