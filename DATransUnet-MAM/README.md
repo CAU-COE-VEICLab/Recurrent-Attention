@@ -1,5 +1,5 @@
 # DA-TransUnet-MAM
-**DA-TransUnet-MAM is to replace all the Self-Attention in DA-TransUnet's bottleneck with the Memory-Attention and apply the Stage Transmission Strategy (STS). Note that we only replace Self-Attention and keep the design of Vision-Transformer, such as `position encoding`, etc.**
+**DA-TransUnet-MAM is to replace all the Self-Attention in DA-TransUnet's bottleneck with the Memory-Attention and apply the Across-Stage Transmission Strategy (ASTS). Note that we only replace Self-Attention and keep the design of Vision-Transformer, such as `position encoding`, etc.**
 
 Our code is based on DA-TransUnet, if you need to use it, please be sure to reference us and DA-TransUnet(https://arxiv.org/abs/2310.12570)!
 
