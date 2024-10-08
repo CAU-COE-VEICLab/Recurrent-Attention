@@ -21,12 +21,12 @@ Training and fine-tuning instructions are in [TRAINING.md](TRAINING.md). Pretrai
 
 <!-- ✅ ⬜️  -->
 ## Evaluation
-Note that **'RecASwinUNETR' denotes 'SwinUNETR-RecA' and 'RecAnnFormer' denotes 'nnFormer-RecA'**.
+Note that **'SwinUNETRRecA' denotes 'SwinUNETR-RecA' and 'nnFormerRecA' denotes 'nnFormer-RecA'**.
 
 Using SwinUNETR-RecA as an example, Efficient evaluation can be performed for the above two public datasets as follows:
 ```
 python test_seg.py --root path_to_image_folder --output path_to_output \
---dataset flare --network RecASwinUNETR --trained_weights path_to_trained_weights \
+--dataset flare --network SwinUNETRRecA --trained_weights path_to_trained_weights \
 --mode test --sw_batch_size 4 --overlap 0.7 --gpu 0 --cache_rate 0.2 \
 ```
 
