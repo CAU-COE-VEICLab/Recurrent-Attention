@@ -1,6 +1,6 @@
-### nnFormer-MAM & SwinUNETR-MAM
+### nnFormer-RecA & SwinUNETR-RecA
 
-**nnFormer-MAM and SwinUNETR-MAM are to replace all the Self-Attention in the above encoder with the Memory-Attention and apply the In-Stage Transmission Strategy (ISTS). Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as `shifted windows, relative position encoding`, etc.**
+**nnFormer-RecA and SwinUNETR-RecA are to replace all the Self-Attention in the above encoder with the Recurrent-Attention-H. Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as `shifted windows, relative position encoding`, etc.**
 
 Our code is based on 3D UX-Net, if you need to use it, please be sure to reference us and 3D UX-Net(https://arxiv.org/abs/2209.15076)!
 
@@ -21,12 +21,12 @@ Training and fine-tuning instructions are in [TRAINING.md](TRAINING.md). Pretrai
 
 <!-- ✅ ⬜️  -->
 ## Evaluation
-Note that **'MemorySwinUNETR' denotes 'SwinUNETR-MAM' and 'MemorynnFormer' denotes 'nnFormer-MAM'**.
+Note that **'RecASwinUNETR' denotes 'SwinUNETR-RecA' and 'RecAnnFormer' denotes 'nnFormer-RecA'**.
 
-Using SwinUNETR-MAM as an example, Efficient evaluation can be performed for the above two public datasets as follows:
+Using SwinUNETR-RecA as an example, Efficient evaluation can be performed for the above two public datasets as follows:
 ```
 python test_seg.py --root path_to_image_folder --output path_to_output \
---dataset flare --network MemorySwinUNETR --trained_weights path_to_trained_weights \
+--dataset flare --network RecASwinUNETR --trained_weights path_to_trained_weights \
 --mode test --sw_batch_size 4 --overlap 0.7 --gpu 0 --cache_rate 0.2 \
 ```
 
