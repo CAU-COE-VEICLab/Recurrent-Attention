@@ -1,5 +1,5 @@
-# Swin-Unet-MAM
-**Swin-Unet-MAM is to replace all the Self-Attention in Swin-Unet's encoder with the Memory-Attention and apply the In-Stage Transmission Strategy (ISTS). Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as `shifted windows, relative position encoding`, etc.**
+# Swin-Unet-RecA
+**Swin-Unet-RecA is to replace all the Self-Attention in Swin-Unet's encoder with the Recurrent-Attention-H. Note that we only replace Self-Attention and keep the design of Swin-Transformer, such as `shifted windows, relative position encoding`, etc.**
 
 Our code is based on Swin-Unet, if you need to use it, please be sure to reference us and Swin-Unet(https://arxiv.org/abs/2105.05537 or https://mcv-workshop.github.io/)!
 
