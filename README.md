@@ -6,7 +6,7 @@ Accurate medical image segmentation is crucial for computer-aided clinical diagn
 
 
 ![dependency](pic/skipconnection.png)
-![STSandISTS](pic/dependency.png)
+![STSandISTS](pic/model.png)
 
 
 ## Results
@@ -35,7 +35,7 @@ The results of the Task 5 - 3D (FLARE 2021-3D) dataset.
 | SwinUNETR-RecA |62.2	|328.4	|93.3	|97.8	|96.5	|97.3	|81.6|
 
 
-![compare3D_FLARTE](pic/compare3D_FLARTE.png)
+![compare3D_FLARTE](pic/compare3D.png)
 
 
 
