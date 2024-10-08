@@ -2,23 +2,13 @@
 This is the code base for **`"Recurrent-Attention: A robust neural network operator for medical image segmentation"`**, and the article is submitted to **` Medical Image Analysis`**.
 
 ## Abstract
-In this work, we explore integrating abstract **cognitive theories** into the **modeling process of visual DNNs** from a computational perspective. Inspired by **MCWMM**, we introduce a pioneering **Memory-Attention Mechanism (MAM)**, which models for the first time **the bootstrapping effect of working memory representations on visual attention** in visual DNNs, empowering visual DNNs to **model time-scale representations**. Notably, the high **topological design** of MAM allows it to `seamlessly replace the SAM in any expert model, inheriting the pre-trained weights of the SAM`. This feature greatly simplifies the **integration and optimization of the model**, enhancing its **practicality and efficiency**. Finally, we conduct comprehensive controlled experiments and ablation studies using four expert models of different architectures on CV's most challenging multimodal medical image segmentation task. The results demonstrate that MAM significantly `improves the performance of the expert models without increasing the number of parameters or computational complexity`. More excitingly, MAM's memory generation, activation, and attention guidance functions align **closely with human cognition**. This discovery opens a new avenue in AI development, shifting from **the quantitatively described neural mechanisms** to **the abstract theories of behavioral cognition**. Our work marks a revolutionary step in this transition, bringing AI closer to mimicking human cognitive processes.
+Accurate medical image segmentation is crucial for computer-aided clinical diagnosis, treatment planning, and intervention. With the advancement of deep learning, expert models based on **Self-Attention (SA)** have become widely utilized in medical image segmentation tasks, including X-rays, CT scans, and MRIs, owing to their exceptional ability to model global dependencies. However, **SA is not specifically designed for medical image segmentation tasks**. Therefore, pure Transformers or hybrid Transformer-CNN models inherit the disadvantage of SA's limited ability to model detailed features, `resulting in mis-segmentation`, particularly when dealing with tiny or morphologically irregular organs or lesions. Moreover, when dealing with medical images that exhibit significant variations in modality and disease, **constructing different model architectures relies on experts' empirical knowledge**, `resulting in limited generalisability`. Therefore, in this study, **we first elucidated and demonstrated the critical role of feature interaction capability in enhancing the fine segmentation performance of expert models in medical image segmentation tasks**. **Inspired by recurrent neural networks, we innovatively designed a general and robust neural network operator named Recurrent-Attention (RecA).** RecA builds a pipeline that can continuously maintain and pass the processing feature flow within the model by introducing the recurrent connection, covering the global dependency modeling capability from a single-layer feature map to the whole model, substantially enhancing the extraction of detailed features. Finally, to validate the effectiveness of RecA, we conducted performance evaluations on three widely used 2D public datasets and two 3D public datasets. The experimental results show that **RecA can seamlessly replace SA in existing expert models, significantly enhancing their performance without increasing parameter size or computational complexity**. More importantly, **RecA exhibits outstanding robustness, independent of expert models and input image modalities**. The introduction of RecA not only offers a new and efficient solution for feature interaction in medical image segmentation and holds the potential to become a foundational operator, replacing SA in the next generation of segmentation models. 
 
-MAM's strengths are attributed to four points: 
-
-(i) **` MAM successfully models abstract long-term memory and working memory into representations that allow for computation`**. 
-
-(ii) **` Inspired by WCWMM, MAM constructs a memory architecture that maintains information within the model's pipeline over time, thereby innovatively incorporating the ability to model time-scale representations within visual DNNs`**.
-
-(iii) **` MAM bases its modeling on visual cognitive processes and successfully implements top-down guided attention from memory in visual DNNs.`**.
-
-(iv) **` MAM exhibits an excellent topology, enabling seamless replacement of SAM in any expert model, utilizing its pre-training weights`**.`see Fig1 to Fig3`.
 
 ![MAM model](pic/model.png)
 ![dependency](pic/MTS.png)
 ![STSandISTS](pic/dependency.png)
 
-This study does not prove that the abstraction approach to MCWMM in MAM is optimal. However, through scientific design and comprehensive ablation experiments, we hope to demonstrate that abstract cognitive theories can serve as a guideline for model design, accelerating the interaction and integration of cognitive psychology and AI and inspiring the exploration of the intersection between other abstract disciplines with AI. Furthermore, our experimental findings indicate that a model's design significantly contributes to its performance when aligned with human cognitive mechanisms. This design philosophy prompts the model to exhibit alignment with human cognition in specific capabilities.
 
 ## Results
 **To learn more detail please read our paper**.
@@ -41,9 +31,9 @@ The results of the Task 5 - 3D (FLARE 2021-3D) dataset.
 | Methods  | #param(M) | FLOPs(G) | DSC(%)↑ | Spleen(%) |  Kidney(%) | Liver(%) | Pancreas(%) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
 | nnFormer | 149.3	|240.2	|88.7	|97.3	|94.9	|94.9	|67.6|
-| nnFormer-MAM | 149.3|	240.2|	89.9|	97.2|	95.5|	96.8|	70.1|
+| nnFormer-RecA | 149.3|	240.2|	89.9|	97.2|	95.5|	96.8|	70.1|
 | SwinUNETR | 62.2	|328.4	|92.7	|97.7	|95.9	|96.9	|80.3|
-| SwinUNETR-MAM |62.2	|328.4	|93.3	|97.8	|96.5	|97.3	|81.6|
+| SwinUNETR-RecA |62.2	|328.4	|93.3	|97.8	|96.5	|97.3	|81.6|
 
 
 ![compare3D_FLARTE](pic/compare3D_FLARTE.png)
@@ -55,13 +45,13 @@ The results of the Task 5 - 3D (FLARE 2021-3D) dataset.
  We conducted a detailed ablation investigation on each important memory concept MAM gave to verify its scientific validity properly. At the same time, we demonstrate that **the memory mechanism in MAM is essentially different from the residual connectivity mechanism in terms of the sensitivity of the data distribution**. `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
 
 The results in the ablation experiment 5.
-  | Memory Transmission Strategies  | Label | Encoder | Decoder | #param(M) |  FLOPs(G) | DSC(%)↑ | HD(mm)↓ | 
+  | Model  | Label | Encoder | Decoder | #param(M) |  FLOPs(G) | DSC(%)↑ | HD(mm)↓ | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
 | No MAM | Baseline 5	|-	|-	|41.3	|8.7	|77.60	|25.19|
-| STS | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.94|
-| STS | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.96|
-| ISTS |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
-| ISTS |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|23.54|
+| With RecA-S | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.94|
+| With RecA-S | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.96|
+| With RecA-H |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
+| With RecA-H |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|23.54|
 
 
  ![memory_based_correlation](pic/memory_based_correlation.png)
@@ -69,8 +59,8 @@ The results in the ablation experiment 5.
 
 ## Train and Test
 We have provided detailed instructions for model training and testing and experimental details. You can click the link below to view them.
-* [DA-TransUnet-MAM ](DATransUnet-MAM/)
-* [SwinUnet-MAM ](SwinUnet-MAM/)
-* [SwinUNETR-MAM & nnFormer-MAM ](SwinUNETR&nnFormer-MAM/) 
+* [DA-TransUnet-RecA ](DATransUnet-MAM/)
+* [SwinUnet-RecA ](SwinUnet-MAM/)
+* [SwinUNETR-RecA & nnFormer-RecA ](SwinUNETR&nnFormer-MAM/) 
 
 ## Citation
