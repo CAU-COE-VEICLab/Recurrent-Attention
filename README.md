@@ -13,15 +13,15 @@ Accurate medical image segmentation is crucial for computer-aided clinical diagn
 ## Results
 **To learn more detail please read our paper**.
 ### Comparison experiments
-The results of the quantitative comparison between the SAM-based model and the MAM-based model are in the Task 1 (Synapse dataset). `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
+The results of the quantitative comparison between the SA-based model and the RecA-based model are in the Task 1 (Synapse dataset). `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
 
 The results of the Task 1.
 | Methods  | DSC(%)↑ | HD(mm)↓ | Aorta(%) | Gallbladder(G)(%) |  Kidney(L)(%) | Kidney(R)(%) | Liver(%) | Pancreas(%) | Spleen(%) | Stomach(%) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: | :---: | :---: | :---: |
 | Swin-Unet | 77.6	|25.2|	86.2|	66.4	|82.3	|75.4	|93.9	|56.4	|88.4	|71.7|
-| Swin-Unet-MAM | 78.6|	23.1	|85.6	|63.6	|84.5	|79.7	|94.0	|58.6	|89.7	|73.4|
+| Swin-Unet-RecA | 78.6|	23.1	|85.6	|63.6	|84.5	|79.7	|94.0	|58.6	|89.7	|73.4|
 | DA-TransUnet | 79.6|	29.1|	87.3|	62.6|	83.1|	79.9|	94.3|	63.3|	86.6|	79.5|
-| DA-TransUnet-MAM | **80.9**|	**25.0**|	87.4|	64.6|	84.6|	82.1|	94.8|	63.2|	89.5|	81.0|
+| DA-TransUnet-RecA | **80.9**|	**25.0**|	87.4|	64.6|	84.6|	82.1|	94.8|	63.2|	89.5|	81.0|
 
 
 
@@ -38,23 +38,6 @@ The results of the Task 5 - 3D (FLARE 2021-3D) dataset.
 
 ![compare3D_FLARTE](pic/compare3D_FLARTE.png)
 
-### Ablation experiments
-
-**To learn more detail please read our paper**.
-
- We conducted a detailed ablation investigation on each important memory concept MAM gave to verify its scientific validity properly. At the same time, we demonstrate that **the memory mechanism in MAM is essentially different from the residual connectivity mechanism in terms of the sensitivity of the data distribution**. `Notice that here we only show part of the experimental results, for the complete experimental results please refer to our paper.`
-
-The results in the ablation experiment 5.
-  | Model  | Label | Encoder | Decoder | #param(M) |  FLOPs(G) | DSC(%)↑ | HD(mm)↓ | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
-| No MAM | Baseline 5	|-	|-	|41.3	|8.7	|77.60	|25.19|
-| With RecA-S | Model 5-1|	√|	-|	41.7	|8.8|	77.68	|23.94|
-| With RecA-S | Model 5-2	|√	|√	|44.4|	9.1	|76.74	|23.96|
-| With RecA-H |Model 5-3	|√|	-	|41.3	|8.7	|78.63	|23.12|
-| With RecA-H |Model 5-4	|√	|√	|41.3	|8.7	|78.17	|23.54|
-
-
- ![memory_based_correlation](pic/memory_based_correlation.png)
 
 
 ## Train and Test
