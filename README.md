@@ -1,4 +1,4 @@
-# Memory-Attention
+# Recurrent-Attention
 This is the code base for **`"Recurrent-Attention: A robust neural network operator for medical image segmentation"`**, and the article is submitted to **` Medical Image Analysis`**.
 
 ## Abstract
