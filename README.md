@@ -1,5 +1,5 @@
 # Recurrent-Attention
-This is the code base for **`"A recurrent-attention mechanism for medical image segmentation"`**, and the article is submitted to **` Pattern Recognition`**.
+This is the code base for **`"A Recurrent-Attention Mechanism for Medical Image Segmentation"`**, and the article is accepted by **` Pattern Recognition`**.
 
 
 ## Abstract
