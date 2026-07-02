@@ -47,3 +47,4 @@ We have provided detailed instructions for model training and testing and experi
 * [SwinUNETR-RecA & nnFormer-RecA ](SwinUNETR&nnFormer-RecA/) 
 
 ## Citation
+Li, G., Liu, L., Du, Y., Liu, P., Li, X., Qi, T., ... & Song, Z. (2025). A recurrent-attention mechanism for medical image segmentation. Pattern Recognition, 112252.
